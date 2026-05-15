@@ -1,0 +1,280 @@
+/* CV — AdminLTE custom theme */
+
+:root {
+  --cv-primary: #3c8dbc;
+  --cv-primary-dark: #2e6da4;
+  --cv-sidebar: #1a2332;
+  --cv-accent: #00c0ef;
+  --cv-font: "Source Sans 3", "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body.cv-page {
+  font-family: var(--cv-font);
+  background: #f0f4f8;
+}
+
+/* Navbar */
+.cv-navbar {
+  background: linear-gradient(135deg, var(--cv-primary-dark) 0%, var(--cv-primary) 100%) !important;
+  border-bottom: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.cv-navbar .navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Sidebar */
+.cv-sidebar.main-sidebar {
+  background: linear-gradient(180deg, var(--cv-sidebar) 0%, #243447 100%) !important;
+}
+
+.cv-sidebar .cv-brand {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+}
+
+.cv-avatar {
+  width: 128px !important;
+  height: 128px !important;
+  object-fit: cover;
+  border: 4px solid rgba(60, 141, 188, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-avatar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 192, 239, 0.35);
+}
+
+.cv-sidebar .nav-link {
+  border-radius: 8px;
+  margin: 2px 8px;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+.cv-sidebar .nav-link:hover,
+.cv-sidebar .nav-link.active {
+  background: rgba(60, 141, 188, 0.25) !important;
+}
+
+.cv-sidebar .nav-link.active {
+  border-left: 3px solid var(--cv-accent);
+}
+
+.sidebar-contact .contact-list li {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.sidebar-contact .contact-list i {
+  width: 18px;
+  margin-top: 2px;
+}
+
+/* Content */
+.cv-content-wrapper {
+  background: #f0f4f8;
+}
+
+.cv-content-header {
+  background: #fff;
+  border-bottom: 1px solid #e8ecf1;
+  padding: 1.5rem 0 1rem;
+}
+
+.cv-hero-title {
+  font-weight: 700;
+  font-size: 1.85rem;
+  color: #2c3e50;
+}
+
+.cv-hero-title .text-primary {
+  color: var(--cv-primary) !important;
+}
+
+.cv-badge-status {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.cv-badge-status .fa-circle {
+  font-size: 0.5rem;
+  vertical-align: middle;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.cv-section {
+  scroll-margin-top: 80px;
+}
+
+/* Cards */
+.cv-page .card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cv-page .card-header {
+  background: #fff;
+  border-bottom: 1px solid #eef2f6;
+  font-weight: 600;
+}
+
+.cv-page .card-outline.card-primary .card-header {
+  border-left: 4px solid var(--cv-primary);
+}
+
+.cv-page .card-outline.card-info .card-header {
+  border-left: 4px solid #17a2b8;
+}
+
+.cv-page .card-outline.card-success .card-header {
+  border-left: 4px solid #28a745;
+}
+
+.cv-page .card-outline.card-warning .card-header {
+  border-left: 4px solid #ffc107;
+}
+
+.cv-page .card-outline.card-danger .card-header {
+  border-left: 4px solid #dc3545;
+}
+
+.cv-page .card-outline.card-secondary .card-header {
+  border-left: 4px solid #6c757d;
+}
+
+/* Stats small-box */
+.cv-stats .small-box {
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cv-stats .small-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.cv-stats .small-box .inner h3 {
+  font-weight: 700;
+}
+
+/* Timeline */
+.cv-timeline::before {
+  background: #dee2e6;
+  border-radius: 2px;
+}
+
+.cv-timeline .timeline-item {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  border: 1px solid #eef2f6;
+}
+
+.cv-timeline .timeline-header {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Skills */
+.skill-item .progress {
+  height: 8px;
+  border-radius: 4px;
+  background: #e9ecef;
+}
+
+.skill-item .progress-bar {
+  border-radius: 4px;
+}
+
+/* Projects */
+.cv-project-card {
+  border-radius: 10px !important;
+  border: 1px solid #e8ecf1 !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cv-project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(60, 141, 188, 0.18);
+}
+
+/* Contact */
+.cv-contact-card {
+  background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+}
+
+.cv-contact-card h3 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Cert list */
+.cv-cert-list .item {
+  padding: 0.85rem 0;
+}
+
+.cv-cert-list .product-title {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Footer */
+.cv-footer {
+  background: #fff;
+  border-top: 1px solid #e8ecf1;
+  color: #6c757d;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print */
+@media print {
+  .main-header,
+  .main-sidebar,
+  .cv-footer,
+  .cv-navbar .nav-link[data-widget="pushmenu"] {
+    display: none !important;
+  }
+
+  .content-wrapper,
+  .cv-content-wrapper {
+    margin-left: 0 !important;
+  }
+
+  .cv-page .card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+  }
+
+  .cv-stats .small-box:hover {
+    transform: none;
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 767.98px) {
+  .cv-hero-title {
+    font-size: 1.4rem;
+  }
+
+  .cv-content-header {
+    padding-top: 1rem;
+  }
+}

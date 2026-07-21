@@ -1,0 +1,12 @@
+.card-outline .card-body .border.rounded {
+  background: #fafbfc;
+}
+
+.btn-remove-row {
+  white-space: nowrap;
+}
+
+.stat-row input,
+.skill-row input {
+  font-size: 0.9rem;
+}
